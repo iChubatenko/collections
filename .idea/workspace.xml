@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7023ca9f-bba6-4cc0-8a29-d61593f34d12" name="Changes" comment="First commit: My implementation of ArrayList.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ihorchubatenko/collections/MyLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ihorchubatenko/collections/Node.java" afterDir="false" />
+    <list default="true" id="7023ca9f-bba6-4cc0-8a29-d61593f34d12" name="Changes" comment="Second commit: My implementation of LinkedList.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ihorchubatenko/collections/hashMap/Entry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ihorchubatenko/collections/hashMap/MyHashMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ihorchubatenko/tests/MyHashMapTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/ihorchubatenko/tests/MyLinkedListTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/ihorchubatenko/tests/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ihorchubatenko/collections/MyArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ihorchubatenko/collections/arrayList/MyArrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ihorchubatenko/collections/MyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ihorchubatenko/collections/linkedList/MyLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ihorchubatenko/collections/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ihorchubatenko/collections/linkedList/Node.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ihorchubatenko/tests/MyArrayListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ihorchubatenko/tests/MyArrayListTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,9 +50,22 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.MyLinkedListTest">
+  <component name="RunManager" selected="Application.MyHashMapTest">
     <configuration name="MyArrayListTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ihorchubatenko.tests.MyArrayListTest" />
+      <module name="collections" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ihorchubatenko.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyHashMapTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ihorchubatenko.tests.MyHashMapTest" />
       <module name="collections" />
       <extension name="coverage">
         <pattern>
@@ -75,8 +92,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MyLinkedListTest" />
+        <item itemvalue="Application.MyHashMapTest" />
         <item itemvalue="Application.MyArrayListTest" />
+        <item itemvalue="Application.MyLinkedListTest" />
       </list>
     </recent_temporary>
   </component>
@@ -94,6 +112,10 @@
       <workItem from="1713006376082" duration="2000000" />
       <workItem from="1714039687569" duration="2609000" />
       <workItem from="1714216386322" duration="2999000" />
+      <workItem from="1714221231259" duration="852000" />
+      <workItem from="1714327722084" duration="7312000" />
+      <workItem from="1714832329249" duration="778000" />
+      <workItem from="1715876698630" duration="1208000" />
     </task>
     <task id="LOCAL-00001" summary="First commit: My implementation of ArrayList.">
       <created>1712860052314</created>
@@ -102,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1712860052314</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Second commit: My implementation of LinkedList.">
+      <created>1714221467188</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1714221467188</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,6 +150,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit: My implementation of ArrayList." />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit: My implementation of ArrayList." />
+    <MESSAGE value="Second commit: My implementation of LinkedList." />
+    <option name="LAST_COMMIT_MESSAGE" value="Second commit: My implementation of LinkedList." />
   </component>
 </project>

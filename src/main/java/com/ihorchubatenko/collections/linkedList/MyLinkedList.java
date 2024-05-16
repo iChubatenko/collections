@@ -1,4 +1,4 @@
-package com.ihorchubatenko.collections;
+package com.ihorchubatenko.collections.linkedList;
 
 public class MyLinkedList<T> {
     private Node head;

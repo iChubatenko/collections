@@ -1,8 +1,10 @@
-package com.ihorchubatenko.collections;
+package com.ihorchubatenko.collections.arrayList;
 
-import java.util.Arrays;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.NoSuchElementException;
 
-public class MyArrayList<T> {
+public class MyArrayList<T> implements Iterable<T> {
 
     private static final int DEFAULT_CAPACITY = 10;
     private Object[] array;
@@ -11,6 +13,11 @@ public class MyArrayList<T> {
     public MyArrayList() {
         array = new Object[DEFAULT_CAPACITY];
         size = 0;
+    }
+
+    @Override
+    public Iterator<T> iterator() {
+        return new MyIterator();
     }
 
     public void add(T element) {
@@ -43,9 +50,13 @@ public class MyArrayList<T> {
         if (index < 0 || index >= size) {
             throw new IndexOutOfBoundsException("Index: " + index + ", Size: " + size);
         }
-            System.arraycopy(array, index + 1, array, index, size - index - 1);
-            array[--size] = null;
-        }
+        System.arraycopy(array, index + 1, array, index, size - index - 1);
+        array[--size] = null;
+    }
+
+    public void removeAll(){
+        array = null;
+    }
 
     public int size() {
         return size;
@@ -67,14 +78,41 @@ public class MyArrayList<T> {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("MyArrayList{");
-        for(int i = 0; i < size; i ++){
+        sb.append("{");
+        for (int i = 0; i < size; i++) {
             sb.append(array[i]);
-            if(i < size - 1){
+            if (i < size - 1) {
                 sb.append(", ");
             }
         }
         sb.append("}");
         return sb.toString();
+    }
+
+    public void addAll(MyArrayList<T> bucket) {
+        for (T element : bucket) {
+            array[size++] = element;
+        }
+    }
+
+    public boolean isEmpty() {
+        return size == 0;
+    }
+
+    private class MyIterator implements Iterator<T> {
+        private int currentIndex = 0;
+
+        @Override
+        public boolean hasNext() {
+            return currentIndex < size;
+        }
+
+        @Override
+        public T next() {
+            if (!hasNext()) {
+                throw new NoSuchElementException();
+            }
+            return (T) array[currentIndex++];
+        }
     }
 }
